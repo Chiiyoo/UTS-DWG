@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS DESAIN WEB</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="header">
+            <img src="images/profile.jpg" alt="Profile Picture">
+            <h2>Gracio Timothy Piga</h2>
+            <p>Software Engineer</p>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
+                <li><a href="#skills"><i class="fas fa-laptop-code"></i> Skills</a></li>
+                <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/yochi.one/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/Chiiyoo" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="background"></div>
+    <div class="content">
+        <div class="container">
+            <!-- <h1 align="center">Welcome to My Portfolio</h1>
+            <p align="center">Ini adalah Web Portofolio Saya</p> -->
+
+            <!-- About Me -->
+            <div id="about" class="about-me">
+                <div class="about-container">
+                    <div class="profile-pic">
+                        <img src="images/about-me.jpg" alt="Profile">
+                    </div>
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <p>
+                            Hello! Nama saya <strong>Gracio Timothy Piga</strong>, dan saya memiliki ketertarikan pada
+                            Software Engineer.
+                            Saya adalah seorang Software Engineer yang spesialis dalam pengembangan aplikasi web yang
+                            dinamis, responsif, dan ramah pengguna. Dengan pondasi yang kuat dalam HTML, CSS, dan
+                            JavaScript, saya bertujuan untuk menciptakan pengalaman pengguna yang menarik dan memuaskan.
+                            Saya menggabungkan desain dan fungsionalitas untuk membangun solusi perangkat lunak yang
+                            efisien dan efektif.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div id="skills" class="skills-section">
+                <h2>What Can I Do?</h2>
+                <div class="skills-container">
+                    <!-- Skill Programming -->
+                    <div class="skill-card" onclick="showProgrammingPopup()">
+                        <i class="fa-solid fa-code" style="color: #e34f26;"></i>
+                        <h3>Programming</h3>
+                    </div>
+                    <!-- Skill Design -->
+                    <div class="skill-card" onclick="showDesignPopup()">
+                        <i class="fa-solid fa-pen-nib" style="color: #61e247;"></i>
+                        <h3>Design</h3>
+                    </div>
+                    <!-- Skill Ideas -->
+                    <div class="skill-card" onclick="showIdeasPopup()">
+                        <i class="fa-regular fa-lightbulb" style="color: #ffc107;"></i>
+                        <h3>Ide Creative</h3>
+                    </div>
+                    <!-- Skill Kustomisasi -->
+                    <div class="skill-card" onclick="showKustomisasiPopup()">
+                        <i class="fa-solid fa-gear" style="color: #17a2b8;"></i>
+                        <h3>Kustomisasi</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Popup Skill -->
+
+            <!-- Programming -->
+            <div id="programming-popup" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup('programming-popup')">&times;</span>
+                    <i class="fa-solid fa-code" style="color: #e34f26;" id="popup-icon"></i>
+                    <h3>Programming Skills</h3>
+                    <div class="programming-details">
+                        <div class="programming-skill">
+                            <i class="fab fa-html5" style="color: #e34f26;"></i>
+                            <div>
+                                <h4>HTML</h4>
+                                <p>Standar bahasa markup untuk membuat halaman web dan aplikasi web.</p>
+                            </div>
+                        </div>
+                        <div class="programming-skill">
+                            <i class="fab fa-css3-alt" style="color: #264de4;"></i>
+                            <div>
+                                <h4>CSS</h4>
+                                <p>Digunakan untuk menata tata letak, warna, dan font pada situs web.</p>
+                            </div>
+                        </div>
+                        <div class="programming-skill">
+                            <i class="fab fa-js" style="color: #f7df1e;"></i>
+                            <div>
+                                <h4>JavaScript</h4>
+                                <p>Bahasa pemrograman yang menambahkan interaktivitas pada situs web.</p>
+                            </div>
+                        </div>
+                        <div class="programming-skill">
+                            <i class="fab fa-bootstrap" style="color: #7952b3;"></i>
+                            <div>
+                                <h4>Bootstrap</h4>
+                                <p>Framework CSS populer untuk membangun situs web responsif dan mobile-first.</p>
+                            </div>
+                        </div>
+                        <div class="programming-skill">
+                            <i class="fa-brands fa-wordpress" style="color: #7952b3;"></i>
+                            <div>
+                                <h4>Wordpress</h4>
+                                <p>Platform open source untuk pembuatan situs web dan blog tanpa coding.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design -->
+            <div id="design-popup" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup('design-popup')">&times;</span>
+                    <i class="fa-solid fa-pen-nib" style="color: #61e247;" id="popup-icon"></i>
+                    <h3>Design</h3>
+                    <div class="design-details">
+                        <div class="design-skill">
+                            <i class="fa-solid fa-paintbrush" style="color: #e34f26;"></i>
+                            <div>
+                                <h4>Design</h4>
+                                <p>Desain grafis berperan penting dalam menyampaikan pesan secara visual, terutama dalam
+                                    pemasaran digital. Saya juga dapat memahami teknik dasar sperti tipografi dan
+                                    komposisi visual, dengan adanya skill desain saya dapat bebas berekspresi dalam
+                                    desain website</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Ide Creative-->
+            <div id="ide-creative-popup" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup('ide-creative-popup')">&times;</span>
+                    <i class="fa-regular fa-lightbulb" style="color: #ffc107;" id="popup-icon"></i>
+                    <h3>Ide Creative</h3>
+                    <div class="ide-creative-details">
+                        <div class="ide-creative-skill">
+                            <i class="fa-regular fa-lightbulb" style="color: #ffc107;"></i>
+                            <div>
+                                <h4>Ide Creative</h4>
+                                <p>Saya memiliki kemampuan untuk mengembangkan ide-ide kreatif dan inovatif untuk
+                                    menciptakan halaman web yang menarik dan memuaskan pengguna.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Kustomisasi-->
+            <div id="kustomisasi-popup" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup('kustomisasi-popup')">&times;</span>
+                    <i class="fa-solid fa-gear" style="color: #17a2b8;" id="popup-icon"></i>
+                    <h3>Kustomisasi</h3>
+                    <div class="kustomisasi-details">
+                        <div class="kustomisasi-skill">
+                            <i class="fa-solid fa-gear" style="color: #17a2b8;"></i>
+                            <div>
+                                <h4>Kustomisasi</h4>
+                                <p>Saya memiliki kemampuan untuk mengatur tampilan dan fungsi situs web sesuai kebutuhan
+                                    dan keinginan pengguna.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project -->
+            <div id="portfolio" class="project-section">
+                <h2>My Projects</h2>
+                <div class="slideshow-container">
+                    <!-- Slide 1 -->
+                    <div class="slide">
+                        <img src="images/project1.jpg" alt="Project 1">
+                        <p class="caption">Project 1: Mini Music Player</p>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <img src="images/project2.jpg" alt="Project 2">
+                        <p class="caption">Project 2: Kalkulator Menghitung Luas Segitiga</p>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <img src="images/project3.jpg" alt="Project 3">
+                        <p class="caption">Project 3: Login Form</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div id="contact" class="contact-section">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Floaring Whatapp -->
+            <a href="https://wa.me/+62881038734230" id="whatsapp-float" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
